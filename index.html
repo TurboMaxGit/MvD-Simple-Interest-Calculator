@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<title>Simple Interest Calculator</title>
+    </head>
+    <body>
+		<br>
+		<div class="maindiv">
+			<h1>Simple Interest Calculator</h1>
+			<table>
+				<tr>
+					<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+					<td>Amount</td>
+					<td><input type="number"  id="principal" required autofocus"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><span id="demo"></span></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><div class="slidecontainer";>
+						<label for="rate">Interest Rate</label>
+					</td>
+					<td><input id="rate" type="range" min="1" max="20" value="10.25" step=0.25 onchange="displayRate()"></input>
+						<output id="displayRate">10.25</output>%
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><label for="years">No. of Years</label>
+					</td>
+					<td><select name="years" id="years">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><button onclick="compute()">Compute Interest</button></td>
+					<td></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+					<td><span id="result"></span></td>
+				</tr>
+			</table>
+		<br>
+		<footer>
+			Copyright 2021 Marcel van Drunen<br>
+			&copy; Everyone Can Get Rich
+		</footer>
+		</div>
+    </body>
+</html>
